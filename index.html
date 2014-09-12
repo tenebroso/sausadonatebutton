@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>SAUSA Donate Button</title>
+        <meta name="description" content="Donate button for SalvationArmyUSA.org">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/donateButton.css">
+
+    </head>
+    <body>
+
+        
+    <div class="donateBtn inactive">
+
+            <span class="btn">Donate</span>
+            <span class="close">x</span>
+
+        <div class="donateMenu">
+            <p>We are currently in need of...</p>
+                <ul>
+                    <li>Financial Donations</li>
+                    <li>Appliances</li>
+                    <li>Automobiles</li>
+                    <li>Clothing</li>
+                    <li>Furniture</li>
+                    <li>Household Goods</li>
+                </ul>
+        </div>
+
+        <div class="donateOptions">
+
+            <p><strong>Give Now</strong></p>
+        
+            <form action="https://donate.salvationarmyusa.org/sslpage.aspx" method="get" id="amount_form">
+                <fieldset>
+                    <input style="display:none;" name="pid" maxlength="25" value="206">
+                        <label for="donation_amount" class="input">
+                            <span>Donation Amount</span>
+                            <input placeholder="Amount" type="number" id="amount" name="amount" maxlength="25">
+                        </label>
+                    <span class="go_button" id="q_btn_2">Go</span>
+                </fieldset>
+            </form>
+        
+        <hr />
+        
+        <p><strong>Donate Goods</strong></p>
+        
+            <form action="http://satruck.org/schedule-online-pickup" method="get" id="satruck_form">
+                <fieldset>
+                    <label for="national_query" class="input">
+                        <span>Zip Code</span>
+                        <input placeholder="Zip Code" type="number" id="national_query" name="national_query" maxlength="25">
+                    </label>
+                    <span class="go_button" id="q_btn_1">Go</span>
+                </fieldset>
+            </form>
+
+        </div><!-- .donateOptions -->
+
+    </div><!-- .donateBtn -->
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
