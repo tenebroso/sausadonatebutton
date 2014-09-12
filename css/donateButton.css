@@ -31,6 +31,12 @@
     border: 0;
 }
 
+.donateBtn input[type=number]::-webkit-inner-spin-button, 
+.donateBtn input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 .donateBtn hr {
     margin: 17px 0;
     border: 0;
