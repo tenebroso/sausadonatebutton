@@ -38,3 +38,16 @@ $donateCloseBtn.click(
     $('.donateBtn').removeClass('active').addClass('inactive');
   }
 );
+
+$('#q_btn_1').click(function() {
+  if( !$('#national_query').val() ) {
+     var url = "http://satruck.org";
+      $(location).attr('href',url);
+  } else {
+    $(this).parent().parent('form').submit();
+  }
+});
+
+$('#q_btn_2').click(function() {
+  $(this).parent().parent('form').submit();
+});
